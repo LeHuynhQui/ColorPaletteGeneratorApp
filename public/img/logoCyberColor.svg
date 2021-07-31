@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="208" height="50" viewBox="0 0 208 50">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_1);
+      }
+
+      .cls-2 {
+        fill: rgba(255,255,255,0);
+        stroke: #0f141e;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #0f141e;
+      }
+
+      .cls-3 {
+        font-size: 27px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 23px;
+        letter-spacing: 0.08em;
+      }
+
+      .cls-5 {
+        font-size: 10px;
+        font-family: Helvetica;
+        letter-spacing: 0.31em;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="208" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" class="cls-1">
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-2" transform="translate(5 2)">
+      <circle class="cls-6" cx="23" cy="23" r="23"/>
+      <circle class="cls-7" cx="23" cy="23" r="22"/>
+    </g>
+    <text id="C" class="cls-3" transform="translate(18 14)"><tspan x="0" y="21">C</tspan></text>
+    <text id="cyber_color" data-name="cyber color" class="cls-4" transform="translate(58 7)"><tspan x="0" y="18">cyber color</tspan></text>
+    <text id="GENERATE_COLORS" data-name="GENERATE COLORS" class="cls-5" transform="translate(59 34)"><tspan x="0" y="8">GENERATE COLORS</tspan></text>
+  </g>
+</svg>

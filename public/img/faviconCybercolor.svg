@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_2);
+      }
+
+      .cls-2, .cls-6 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        stroke: #0f141e;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #0f141e;
+        font-size: 39px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" class="cls-1">
+    <rect class="cls-6" width="64" height="64"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-2">
+      <circle class="cls-4" cx="32" cy="32" r="32"/>
+      <circle class="cls-5" cx="32" cy="32" r="31"/>
+    </g>
+    <text id="C" class="cls-3" transform="translate(17 16)"><tspan x="0" y="30">C</tspan></text>
+  </g>
+</svg>
