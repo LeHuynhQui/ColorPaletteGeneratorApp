@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react';
+import { FAKE_DATA } from "./../FakeData"
 
 export default function ColorItem() {
-
     // convert RGB => HEX
     const componentToHex = (c) => {
         let hex = c.toString(16);
@@ -38,11 +38,15 @@ export default function ColorItem() {
 
         http.open("POST", url, true);
         http.send(JSON.stringify(data));
+
     }
+    getColorAPI()
+
+
 
 
     // RENDER COLORS
-    const renderColor = (colorList) => {
+    function renderColor (colorList){
         let content = ''
         colorList.forEach((rgb, index) => {
             let hexValue = (rgbToHex(rgb[0], rgb[1], rgb[2])).toUpperCase();
@@ -57,20 +61,28 @@ export default function ColorItem() {
         })
 
         document.querySelector(".color-list").innerHTML = content;
+
+
+        
     }
 
 
 
-    // EVENT SAPCEBAR CLICKED
+    // EVENT SAPCEBAR PRESSED
     document.addEventListener("keypress", e => {
         const spaceBar = 32;
         const spaceBarKey = ' '; //Back up solution
-        if (e.which === spaceBar || e.key === spaceBarKey) getColorAPI()
+        if (e.which === spaceBar || e.key === spaceBarKey) {
+            getColorAPI()
+        }
     })
+ 
+    const generateColor = () => {
+        getColorAPI()
+    }
 
 
-
-    // EVENT CTRL + C or CMD + C CLICKED
+    // EVENT CTRL + C or CMD + C PRESSED
     document.addEventListener("keydown", e => {
         // detect C key
         let isCKey = false;
@@ -136,9 +148,28 @@ export default function ColorItem() {
     }
 
 
+
+
+
     return (
         <div>
-            {getColorAPI()}
+             <div>
+                <hr className="m-0"/>
+                <section className="guideline">
+                    <div>
+                        <button className="generate-btn" onClick={generateColor}><i className="fas fa-sync mr-2" /> Generate</button>
+                    </div>
+                    <div>
+                        <p>Press <b>Spacebar</b> to generate new color palettes!</p>
+                        <p>Press <b>Ctr + C/ ⌘ + C</b> to copy all color HEX!</p>
+                        <p>Select color tag to copy the color HEX!</p>
+                    </div>
+                </section>
+                <hr className="m-0"/>
+            </div>
+            <section className="color-list">
+                {getColorAPI()}
+            </section>
         </div>
     )
 }
